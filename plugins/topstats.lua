@@ -281,7 +281,7 @@ maxname[2] = user.print_name
 	else
 	maxuser[3] = '@'..maxuser[3]
 end
-local text = ' 👥<code>Active Users:</code> \n\n ~> 1: '..maxname[1]..' | '..maxuser[1]..' '..maxtex[1] + maxph[1] + maxst[1] + maxoth[1]..' <b>Msgs.</b>'
+local text = ' 👥 <b>Active Users:</b> \n\n ~> <code>1:</code> '..maxname[1]..' | '..maxuser[1]..' '..maxtex[1] + maxph[1] + maxst[1] + maxoth[1]..' <b>Msgs.</b>'
 if maxid[2] then
 	if not maxid[3] then
 text = text..'\n ~> <code>2:</code> '..maxname[2]..' | '..maxuser[2]..' '..maxtex[2] + maxph[2] + maxst[2] + maxoth[2]..' <b>Msgs.<b>'
