@@ -281,12 +281,12 @@ maxname[2] = user.print_name
 	else
 	maxuser[3] = '@'..maxuser[3]
 end
-local text = '> <code>Active Users</code>: \n\n ~> 1: '..maxname[1]..' | '..maxuser[1]..' '..maxtex[1] + maxph[1] + maxst[1] + maxoth[1]..' Msgs.'
+local text = ' 👥<code>Active Users:</code> \n\n ~> 1: '..maxname[1]..' | '..maxuser[1]..' '..maxtex[1] + maxph[1] + maxst[1] + maxoth[1]..' <b>Msgs.</b>'
 if maxid[2] then
 	if not maxid[3] then
-text = text..'\n> 2: '..maxname[2]..' | '..maxuser[2]..' '..maxtex[2] + maxph[2] + maxst[2] + maxoth[2]..' Msgs.'
+text = text..'\n ~> <code>2:</code> '..maxname[2]..' | '..maxuser[2]..' '..maxtex[2] + maxph[2] + maxst[2] + maxoth[2]..' <b>Msgs.<b>'
 else
-text = text..'\n> 2: '..maxname[2]..' | '..maxuser[2]..' '..maxtex[2] + maxph[2] + maxst[2] + maxoth[2]..' Msgs.\n> 3: '..maxname[3]..' | '..maxuser[3]..' '..maxtex[3] + maxph[3] + maxst[3] + maxoth[3]..' Msgs.'
+text = text..'\n ~> <code>2:</code> '..maxname[2]..' | '..maxuser[2]..' '..maxtex[2] + maxph[2] + maxst[2] + maxoth[2]..' <b>Msgs.</b> \n ~> <code>3:</code> '..maxname[3]..' | '..maxuser[3]..' '..maxtex[3] + maxph[3] + maxst[3] + maxoth[3]..' <b>Msgs.</b>'
 end
 end
 send_msg('channel#id'..cb_extra, text, ok_cb, true)
